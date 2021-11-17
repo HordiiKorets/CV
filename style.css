@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 80%;
+  background: azure;
+  font-family: "Roboto", sans-serif;
+  position: relative;
+}
+.head,
+footer {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  color: rgb(170, 170, 197);
+  font-weight: bold;
+}
+header {
+  border-radius: 1vh;
+  padding: 1vh;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background: url(https://images.unsplash.com/photo-1557683316-973673baf926?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1129&q=80);
+}
+main {
+  margin: 2vh;
+}
+.photo img {
+  display: block;
+  border-radius: 50%;
+  overflow: hidden;
+  width: 15vh;
+  height: 15vh;
+}
+.contactBlock {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contact,
+.photo {
+  margin: 0 auto;
+}
+
+.qualifications,
+.skills,
+.languages,
+.education,
+.additionalEducation,
+.hobbies {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.qualifications article,
+.skills article,
+.languages article,
+.education article,
+.additionalEducation article,
+.hobbies article {
+  margin: 1vh;
+  width: 50%;
+  border: 1px solid blue;
+}
+section, 
+article {
+  border-radius: 1vh;
+  padding: 1vh;
+}
+.section,
+.contact em {
+  text-align: center;
+  width: 50%;
+  font-style: italic;
+  font-size: large;
+  color: rgb(0, 140, 255);
+}
+article:hover {
+  background-color: rgb(144, 231, 231);
+}
+
+.section:hover {
+  background-color: yellow;
+}
+section::before {
+  content: "";
+  border: 1vh solid transparent;
+  border-top: 1vh solid transparent;
+  border-left: 25px solid #87cefa;
+}
+#div1{
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  .qualifications,
+  .skills,
+  .languages,
+  .education,
+  .additionalEducation,
+  .hobbies {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .contactBlock {
+    display: grid;
+  }
+
+  .photo {
+    grid-column: 1;
+    grid-row: 1 / 1;
+  }
+  .contact {
+    grid-column: 1;
+    grid-row: 2 / 2;
+  }
+}
