@@ -25,8 +25,8 @@ header {
   position: sticky;
   top: 0;
   z-index: 1;
-  background-size: cover;
   background: url(https://images.unsplash.com/photo-1557683316-973673baf926?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1129&q=80);
+  background-size: cover;
 }
 main {
   margin: 2vh;
